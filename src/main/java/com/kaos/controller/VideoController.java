@@ -11,13 +11,13 @@ import com.kaos.repository.FilmRepository;
 import com.kaos.video.model.Film;
 
 @Controller
-@RequestMapping(path = "/videoBaza")
+@RequestMapping("/video")
 public class VideoController {
 
 	@Autowired
 	private FilmRepository filmRepository;
 
-	@GetMapping(path = "/add")
+	@GetMapping("/add")
 	public @ResponseBody String addNewFilm(@RequestParam String title) {
 
 		Film film = new Film();
@@ -27,8 +27,15 @@ public class VideoController {
 		return "Movie saved";
 	}
 
-	@GetMapping(path = "/all")
+	@GetMapping("/all")
 	public @ResponseBody Iterable<Film> getAllFilms() {
 		return filmRepository.findAll();
 	}
+	@RequestMapping("/hello")
+    @ResponseBody
+    public String answer() {
+        return "Yes, server - ON";
+    }
+	
+	
 }

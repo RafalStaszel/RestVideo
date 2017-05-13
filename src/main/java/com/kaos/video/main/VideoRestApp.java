@@ -1,4 +1,4 @@
-package com.kaos.video;
+package com.kaos.video.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
