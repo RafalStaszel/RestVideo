@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.kaos.repository.FilmRepository;
-import com.kaos.video.model.Film;
+import com.kaos.model.Film;
 
 @Controller
 @RequestMapping("/video")

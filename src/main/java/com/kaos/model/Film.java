@@ -1,4 +1,4 @@
-package com.kaos.video.model;
+package com.kaos.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

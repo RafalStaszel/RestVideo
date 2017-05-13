@@ -1,7 +1,7 @@
 package com.kaos.repository;
 
 import org.springframework.data.repository.CrudRepository;
-import com.kaos.video.model.Film;
+import com.kaos.model.Film;
 
 public interface FilmRepository extends CrudRepository<Film, Integer> {
 	 Film findByTitleIgnoreCase(String title);
