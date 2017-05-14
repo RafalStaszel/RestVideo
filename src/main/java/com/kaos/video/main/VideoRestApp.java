@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @ComponentScan("com.kaos")
-@EntityScan("com.kaos.video.model")
+@EntityScan("com.kaos.model")
 @EnableJpaRepositories("com.kaos.repository")
 public class VideoRestApp {
 
